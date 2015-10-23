@@ -24,6 +24,25 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
+TW_THEME := portrait_hdpi
+
+# Fusion Optimizations
+FUSION_OPT := true
+FUSION_O3 := true
+FUSION_STRICT := false
+FUSION_OFAST := true
+FUSION_KRAIT := true
+FUSION_GRAPHITE := true
+FUSION_PIPE := true
+FUSION_ENABLE_GCCONLY := true
+FLOOP_NEST_OPTIMIZE := true
+FUSION_FFAST_MATH := true
+TARGET_FUSION_ROM := 4.9
+TARGET_FUSION_KERNEL := 4.9
+
+# SaberMod
+-include vendor/fusion/config/sm.mk
+
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8x60
 TARGET_KERNEL_CONFIG := cm_viskan_huashan_defconfig
